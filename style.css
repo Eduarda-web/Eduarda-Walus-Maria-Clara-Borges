@@ -7,6 +7,9 @@ color: rgb(255, 216, 228);
 }
 
 body{
-    background-color: blanchedalmond;
-    color: burlywood;
+    background-color: rgb(255, 236, 235);
+    color: rgb(255, 149, 149);
+display: flex;
+align-items: center;
+justify-content: space-around;
 }
