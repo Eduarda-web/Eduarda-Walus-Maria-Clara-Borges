@@ -15,6 +15,14 @@ justify-content: space-around;
 }
 
 .links{
-    display:flex
-    
+    display:flex;
+    flex-direction: column;
+}
+
+a{
+    margin: 20px;
+    padding: 20px;
+    background-color: hotpink;
+    color: black;
+    border-radius: 20px;
 }
