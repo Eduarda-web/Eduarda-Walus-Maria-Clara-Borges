@@ -1,5 +1,6 @@
 header{
-    display: flex;
+    display: grid;
+    grid
     border-bottom: solid black 1px;
     
   .galeria{
@@ -12,6 +13,4 @@ body{
   font-weight: 400;
   font-style: normal;
 }
-section{
-  display: flex;
-}
+
