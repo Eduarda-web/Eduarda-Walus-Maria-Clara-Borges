@@ -1,6 +1,5 @@
 header{
     display: flex;
-    border-bottom: solid black 1px;
     
   .galeria{
     width: 50%;
@@ -13,3 +12,7 @@ body{
   font-style: normal;
 }
 
+.traco{
+      border-top: solid black 1px;
+
+}
