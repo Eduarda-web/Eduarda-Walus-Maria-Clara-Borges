@@ -1,4 +1,4 @@
-header{
+.Cabeçalho{
     display: flex;
     
   .galeria{
@@ -14,7 +14,7 @@ body{
 
 .traco{
       border-top: solid black 1px;
-
+display: flex;
 }
 
 .logo{
