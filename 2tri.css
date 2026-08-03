@@ -27,3 +27,8 @@ display: flex;
   width: 7%;
   height: 7%;
 }
+
+.bot{
+      background-color: yellow;
+    border-radius: 18px;
+}
