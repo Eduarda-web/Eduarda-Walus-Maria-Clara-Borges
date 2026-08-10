@@ -19,8 +19,10 @@ body{
 }
 
 .traco{
-      border-top: solid black 1px;
-display: flex;
+border-top: solid black 1px; 
+display: flex; 
+justify-content: center; 
+align-items: center; gap: 20px;
 }
 
 .logo{
