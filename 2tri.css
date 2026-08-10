@@ -31,10 +31,8 @@ align-items: center; gap: 20px;
 }
 
 .bot{
-      background-color: rgb(255, 255, 131);
-    border-radius: 18px;
     background-color: rgb(255, 255, 131); 
-    border-radius: 18px; 
+    border-radius: 20px; 
     padding: 8px 20px; 
     margin: 0;
 }
