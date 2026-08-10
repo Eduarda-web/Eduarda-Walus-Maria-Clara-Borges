@@ -31,4 +31,7 @@ display: flex;
 .bot{
       background-color: yellow;
     border-radius: 18px;
+    display: flex;
+        align-items: center;
+    justify-content: space-between;
 }
