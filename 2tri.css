@@ -31,9 +31,9 @@ align-items: center; gap: 20px;
 }
 
 .bot{
-      background-color: yellow;
+      background-color: rgb(255, 255, 131);
     border-radius: 18px;
-    background-color: yellow; 
+    background-color: rgb(255, 255, 131); 
     border-radius: 18px; 
     padding: 8px 20px; 
     margin: 0;
