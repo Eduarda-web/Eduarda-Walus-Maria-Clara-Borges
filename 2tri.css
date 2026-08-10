@@ -31,6 +31,8 @@ display: flex;
 .bot{
       background-color: yellow;
     border-radius: 18px;
-    display: flex;
-    justify-content: center;
+    background-color: yellow; 
+    border-radius: 18px; 
+    padding: 8px 20px; 
+    margin: 0;
 }
