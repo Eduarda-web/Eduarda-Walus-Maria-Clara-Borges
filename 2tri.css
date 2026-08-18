@@ -590,3 +590,7 @@ footer p {
         font-size: 16px;
     }
 }
+.abelha-grande img {
+    width: 250px;
+    height: auto;
+}
