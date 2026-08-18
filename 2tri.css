@@ -1,70 +1,592 @@
-.Cabeçalho{
-    display: flex;
-        align-items: center;
-    justify-content: space-between;
-  }  
-  .Cab{
-    display: flex;
-        align-items: center;
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
-  }
-  .galeria{
-    width: 50%;
-  }
-body{
-  background-color: white;
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+* {
+    box-sizing: border-box;
 }
 
-.traco{
-border-top: solid black 1px; 
-display: flex; 
-justify-content: center; 
-align-items: center; gap: 20px;
+html {
+    scroll-behavior: smooth;
 }
 
-.logo{
-  width: 7%;
-  height: 7%;
-}
-
-.bot{
-    background-color: rgb(255, 255, 131); 
-    border-radius: 20px; 
-    padding: 8px 20px; 
+body {
     margin: 0;
+    background-color: white;
+    color: #111;
+
+    font-family: Arial, sans-serif;
+    font-weight: 400;
 }
 
-.informacao1 {
-    background-color: rgb(255, 255, 131);
 
-    width: 500px;
-    height: 500px;
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 18px;
+
+    border-bottom: 4px solid black;
+}
+
+.cab {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.cab h1 {
+    margin: 0;
+
+    font-family: "Anton", sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.abelha-topo {
+    font-size: 42px;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.entrar {
+    width: 105px;
+    height: 42px;
+
+    background-color: #fff4a8;
+
+    border: 2px solid #222;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.entrar:hover {
+    background-color: #ffdf55;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.traco {
+    min-height: 58px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 8px;
+}
+
+.bot {
+    width: 165px;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+
+    font-family: "Anton", sans-serif;
+    font-size: 17px;
+
+    background: linear-gradient(
+        90deg,
+        #ffce62,
+        #fff58c
+    );
+
+    transition: 0.2s;
+}
+
+.bot:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 10px auto 70px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        0.55fr
+        1fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   COLUNA ESQUERDA
+========================= */
+
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* CÍRCULO */
+
+.informacao {
+    width: 420px;
+    height: 420px;
+
+    max-width: 100%;
+
+    margin: 20px auto;
+
+    padding: 50px;
+
+    border: 5px solid #222;
 
     border-radius: 50%;
 
-    margin: 50px auto;
-
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
     text-align: center;
-
-    padding: 60px;
-    box-sizing: border-box;
 }
 
-.informacao1 h3 {
-    margin: 0 0 15px 0;
+.informacao h2 {
+    margin: 0 0 10px;
+
+    font-family: "Anton", sans-serif;
+    font-size: 24px;
 }
 
-.informacao1 p {
+.informacao p {
     margin: 0;
+
+    font-size: 19px;
     line-height: 1.4;
 }
 
 
+/* =========================
+   CAIXAS
+========================= */
+
+.caixa {
+    border: 3px solid #222;
+
+    border-radius: 20px;
+
+    padding: 16px 20px;
+
+    background-color: white;
+}
+
+.caixa p {
+    margin: 5px 0;
+
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.caixa h2 {
+    margin: 0 0 10px;
+
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+}
+
+.revisao {
+    margin-top: 0;
+}
+
+.ajudar {
+    border-radius: 20px;
+
+    padding: 18px;
+
+    margin-top: 0;
+}
+
+.ajudar h2 {
+    font-family: "Anton", sans-serif;
+
+    margin: 0 0 8px;
+}
+
+
+/* =========================
+   COLUNA CENTRAL
+========================= */
+
+.coluna-central {
+    position: relative;
+
+    min-height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abelhas {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 45px;
+
+    margin-top: 45px;
+}
+
+.abelha-doente {
+    font-size: 65px;
+
+    filter: grayscale(30%);
+
+    transform: rotate(-10deg);
+}
+
+.abelha-doente:nth-child(2) {
+    transform: rotate(15deg);
+}
+
+.abelha-doente:nth-child(3) {
+    transform: rotate(-8deg);
+}
+
+.abelha-grande {
+    margin-top: 120px;
+
+    font-size: 145px;
+
+    transform: rotate(-15deg);
+}
+
+
+/* =========================
+   COLUNA DIREITA
+========================= */
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* AGRONEGÓCIO */
+
+.agronegocio {
+    border-radius: 0;
+
+    padding: 8px 10px;
+
+    border: 2px solid #222;
+}
+
+.agronegocio h2 {
+    font-family: "Anton", sans-serif;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+.agronegocio h3 {
+    margin: 3px 0;
+
+    font-size: 15px;
+}
+
+.agronegocio p {
+    margin: 3px 0;
+
+    font-size: 14px;
+
+    line-height: 1.25;
+}
+
+
+/* =========================
+   BALÃO BIODIVERSIDADE
+========================= */
+
+.balao {
+    position: relative;
+
+    background-color: white;
+
+    border: 3px solid #222;
+
+    border-radius: 22px;
+
+    padding: 15px 20px;
+}
+
+.balao::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -40px;
+    left: 35px;
+
+    width: 45px;
+    height: 45px;
+
+    background: white;
+
+    border-right: 3px solid #222;
+    border-bottom: 3px solid #222;
+
+    transform: rotate(45deg);
+}
+
+.balao h2 {
+    margin: 0 0 5px;
+
+    font-family: "Anton", sans-serif;
+
+    font-size: 21px;
+}
+
+.balao p {
+    margin: 0;
+
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+
+/* =========================
+   POLINIZAÇÃO
+========================= */
+
+.polinizacao {
+    margin-top: 45px;
+}
+
+.polinizacao p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   CONSENSO
+========================= */
+
+.consenso {
+    margin-top: 40px;
+
+    border-radius: 0;
+
+    padding: 15px 20px;
+}
+
+.consenso h2 {
+    font-size: 20px;
+}
+
+.consenso p {
+    font-size: 16px;
+
+    line-height: 1.35;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    min-height: 70px;
+
+    border-top: 4px solid #222;
+
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 10px 25px;
+
+    font-size: 22px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.perfil {
+    width: 60px;
+    height: 60px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .coluna-central {
+        min-height: auto;
+        order: 2;
+    }
+
+    .coluna-esquerda {
+        order: 1;
+    }
+
+    .coluna-direita {
+        order: 3;
+    }
+
+    .abelhas {
+        flex-direction: row;
+
+        justify-content: center;
+
+        gap: 25px;
+
+        margin-top: 10px;
+    }
+
+    .abelha-doente {
+        font-size: 45px;
+    }
+
+    .abelha-grande {
+        margin-top: 20px;
+
+        font-size: 100px;
+    }
+
+    .informacao {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        height: auto;
+
+        padding: 8px;
+    }
+
+    .cab h1 {
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .abelha-topo {
+        display: none;
+    }
+
+    .entrar {
+        width: 80px;
+        height: 35px;
+
+        font-size: 12px;
+    }
+
+    .traco {
+        gap: 5px;
+    }
+
+    .bot {
+        width: auto;
+
+        padding: 8px 12px;
+
+        font-size: 13px;
+    }
+
+    main {
+        width: 95%;
+
+        gap: 10px;
+    }
+
+    .informacao {
+        width: 320px;
+        height: 320px;
+
+        padding: 35px;
+    }
+
+    .informacao h2 {
+        font-size: 19px;
+    }
+
+    .informacao p {
+        font-size: 15px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        font-size: 16px;
+    }
+}

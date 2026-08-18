@@ -1,69 +1,292 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>SOS Abelhas</title>
+
     <link rel="stylesheet" href="2tri.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arial&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
-        <div class="Cabeçalho"><div class="Cab"><img class="logo" src="./Abelha Cabeçalho.png" alt="">
-        <h2>SOS Abelhas</h2></div>
-        <p class="botao"> Entrar</p></div>
-        
-        
-        
-        <div class="traco">
-            <p class="bot">Início</p>
-            <p class="bot"> Como Ajudar</p>
-            <p class="bot"> Doe</p>
+
+        <div class="cabecalho">
+
+            <div class="cab">
+                <img class="logo" src="./Abelha Cabeçalho.png" alt="Logo de uma abelha">
+
+                <h1>SOS.Abelhas</h1>
+            </div>
+
+            <div class="abelha-topo">
+                🐝
+            </div>
+
+            <button class="entrar">
+                ENTRAR
+            </button>
+
         </div>
+
+
+        <!-- MENU -->
+        <nav class="traco">
+
+            <a href="#inicio" class="bot">
+                Início →
+            </a>
+
+            <a href="#ajudar" class="bot">
+                Como Ajudar →
+            </a>
+
+            <a href="#doe" class="bot">
+                Doe →
+            </a>
+
+        </nav>
+
     </header>
-    <div class="informacao">
-         <h3>Mortes em massa no Brasil</h3>
-          <p> Diversos episódios foram registrados nos últimos anos. Um caso amplamente divulgado ocorreu em 2023, em Mato Grosso, quando mais de 100 milhões de abelhas morreram após aplicação irregular de fipronil em uma lavoura de algodão, segundo relatos de apicultores e investigações das autoridades. </p> 
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="inicio">
+
+        <!-- PRIMEIRA COLUNA -->
+        <section class="coluna-esquerda">
+
+            <div class="informacao">
+
+                <h2>Mortes em massa no Brasil</h2>
+
+                <p>
+                    Diversos episódios foram registrados nos últimos anos.
+                    Um caso amplamente divulgado ocorreu em 2023, em Mato Grosso,
+                    quando mais de 100 milhões de abelhas morreram após aplicação
+                    irregular de fipronil em uma lavoura de algodão, segundo relatos
+                    de apicultores e investigações das autoridades.
+                </p>
+
+            </div>
+
+
+            <div class="caixa revisao">
+
+                <p>
+                    Uma revisão publicada em 2021 destaca três fatores do modelo
+                    agrícola industrial que afetam as abelhas:
+                </p>
+
+                <p>
+                    <strong>expansão do desmatamento;</strong><br>
+                    <strong>uso intensivo de agrotóxicos;</strong><br>
+                    <strong>cultivo em larga escala de monoculturas e variedades transgênicas.</strong>
+                </p>
+
+                <p>
+                    Os autores ressaltam que há evidências tanto de efeitos agudos
+                    (mortes imediatas) quanto de efeitos crônicos, como alterações
+                    fisiológicas e comportamentais que enfraquecem as colônias
+                    ao longo do tempo.
+                </p>
+
+            </div>
+
+
+            <div class="caixa ajudar" id="ajudar">
+
+                <h2>Como ajudar:</h2>
+
+                <p>
+                    Plante flores que produzam néctar e pólen;
+                </p>
+
+                <p>
+                    Evitar o uso de pesticidas e inseticidas;
+                </p>
+
+                <p>
+                    Preserve áreas verdes e evite destruir colmeias;
+                </p>
+
+                <p>
+                    Apoie o comércio de mel responsável;
+                </p>
+
+                <p>
+                    Ajude a conscientizar.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLUNA CENTRAL -->
+        <section class="coluna-central">
+
+            <div class="abelhas">
+
+                <div class="abelha-doente">🐝</div>
+                <div class="abelha-doente">🐝</div>
+                <div class="abelha-doente">🐝</div>
+
+            </div>
+
+            <div class="abelha-grande">
+                🐝
+            </div>
+
+        </section>
+
+
+        <!-- SEGUNDA COLUNA -->
+        <section class="coluna-direita">
+
+            <div class="caixa agronegocio">
+
+                <h2>
+                    Como o agronegócio pode afetar as abelhas
+                </h2>
+
+                <h3>1. Uso de agrotóxicos</h3>
+
+                <p>
+                    Inseticidas, especialmente os neonicotinoides e o fipronil,
+                    podem matar abelhas diretamente ou afetar sua capacidade de
+                    navegação, reprodução e busca por alimento.
+                </p>
+
+                <p>
+                    Estudos brasileiros registraram mortes em massa de colmeias
+                    após pulverizações agrícolas, principalmente quando houve
+                    uso inadequado ou irregular de produtos.
+                </p>
+
+
+                <h3>2. Monoculturas</h3>
+
+                <p>
+                    Grandes áreas cultivadas com uma única espécie vegetal reduzem
+                    a diversidade de flores disponíveis ao longo do ano.
+                </p>
+
+                <p>
+                    Isso limita a oferta de pólen e néctar, enfraquecendo as colônias.
+                </p>
+
+
+                <h3>3. Desmatamento</h3>
+
+                <p>
+                    A expansão agrícola pode eliminar habitats naturais onde vivem
+                    abelhas nativas.
+                </p>
+
+                <p>
+                    A fragmentação das áreas naturais dificulta a sobrevivência e
+                    reprodução desses polinizadores.
+                </p>
+
+            </div>
+
+
+            <!-- BIODIVERSIDADE -->
+
+            <div class="balao">
+
+                <h2>Biodiversidade</h2>
+
+                <p>
+                    Ao polinizarem flores, elas permitem que muitas plantas se
+                    reproduzam, preservando florestas, campos e outros ecossistemas.
+                </p>
+
+            </div>
+
+
+            <div class="caixa polinizacao">
+
+                <p>
+                    As abelhas são responsáveis pela polinização de cerca de 75%
+                    das principais culturas agrícolas do mundo e de aproximadamente
+                    90% das plantas silvestres com flores.
+                </p>
+
+                <p>
+                    Sem elas, haveria redução na produção de alimentos, perda de
+                    biodiversidade e impactos econômicos significativos.
+                </p>
+
+            </div>
+
+
+            <!-- CONSENSO -->
+
+            <div class="caixa consenso">
+
+                <h2>O consenso científico</h2>
+
+                <p>
+                    Os pesquisadores concordam que:
+                </p>
+
+                <p>
+                    • o uso inadequado de agrotóxicos representa uma das principais
+                    ameaças às abelhas;
+                </p>
+
+                <p>
+                    • a expansão agrícola pode reduzir habitats e recursos alimentares;
+                </p>
+
+                <p>
+                    • não existe uma única causa para o declínio das populações de
+                    abelhas.
+                </p>
+
+                <p>
+                    Doenças, parasitas (como o ácaro Varroa), mudanças climáticas
+                    e perda de biodiversidade também desempenham papel importante.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer id="doe">
+
+        <div class="perfil">
+            👤
         </div>
 
-<h4>Como o agronegócio pode afetar as abelhas</h4>
-<p>1. Uso de agrotóxicos</p>
-<p>Inseticidas, especialmente os neonicotinoides e o fipronil, podem matar abelhas diretamente ou afetar sua capacidade de navegação, reprodução e busca por alimento.
-</p>
-<p>Estudos brasileiros registraram mortes em massa de colmeias após pulverizações agrícolas, principalmente quando houve uso inadequado ou irregular de produtos. </p>
-<p>2. Monoculturas</p>
-<p>Grandes áreas cultivadas com uma única espécie vegetal reduzem a diversidade de flores disponíveis ao longo do ano.</p>
-<p>Isso limita a oferta de pólen e néctar, enfraquecendo as colônias. </p>
-<p>3. Desmatamento</p>
-<p>A expansão agrícola pode eliminar habitats naturais onde vivem abelhas nativas.</p>
-<p>A fragmentação das áreas naturais dificulta a sobrevivência e reprodução desses polinizadores.</p>
+        <p>
+            Eduarda Walus Custodio
+        </p>
 
-<p>Uma revisão publicada em 2021 destaca três fatores do modelo agrícola industrial que afetam as abelhas</p>
-<p>expansão do desmatamento;</p>
-<p>uso intensivo de agrotóxicos;</p>
-<p>cultivo em larga escala de monoculturas e variedades transgênicas.</p>
-<p>Os autores ressaltam que há evidências tanto de efeitos agudos (mortes imediatas) quanto de efeitos crônicos, como alterações fisiológicas e comportamentais que enfraquecem as colônias ao longo do tempo. </p>
+        <p>
+            3 ano C
+        </p>
 
-<h3>Biodiversidade</h3>
-<p>Ao polonizarem flores, elas permitem que muitas plantas se reproduzam, preservando florestas, campos e outros ecossistemas.</p>
-<p>As abelhas são responsáveis pela polinização de cerca de 75% das principais culturas agrícolas do mundo e de aproximadamente 90% das plantas silvestres com flores. Sem elas, haveria redução na produção de alimentos, perda de biodiversidade e impactos econômicos significativos.</p>
+        <p>
+            Número: 09
+        </p>
 
-<h3>Como ajudar: </h3>
-<p>Plante flores que produzam néctar e pólen;</p>
-<p>Evitar o uso de pesticidas e inseticidas;</p>
-<p>Preserve áreas verdes e evite destruir comeias;</p>
-<p>Apoie o comércio de mel responsável; 
-Ajude a conscientizar</p>
-
-<h3>O consenso científico</h3>
-<p>Os pesquisadores concordam que:</p>
-<p>o uso inadequado de agrotóxicos representa uma das principais ameaças às abelhas;</p>
-<p>a expansão agrícola pode reduzir habitats e recursos alimentares;
-não existe uma única causa para o declínio das populações de abelhas. Doenças, parasitas (como o ácaro Varroa), mudanças climáticas e perda de biodiversidade também desempenham papel importante.</p>
+    </footer>
 
 </body>
-
 </html>
